@@ -99,7 +99,7 @@ for i in range(len(output_columns)):
 
 
 # append rows to an empty DataFrame
-for case in common_cases:
+for case in common_cases[1000]:
     row_value = []
   
 
@@ -150,7 +150,7 @@ for case in common_cases:
         elif col in part_df.columns:
             row_value.append(part_df[part_df.parent==case][col].iloc[0])
         else:
-            row_value.append("Not Available")
+            row_value.append(" ")
     print(len(row_value))
 
             

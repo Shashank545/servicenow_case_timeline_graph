@@ -5,6 +5,7 @@ import pandas as pd
 import graphviz
 from datetime import datetime
 
+
 #initialize D graph of Graphviz
 d = graphviz.Digraph(filename='rank_same.gv')
 
@@ -189,5 +190,5 @@ for ev,ev1,ev2 in zip(case_event_list, case_time_list, case_attr_list):
 for i in range(len(case_event_list)-1):
     d.edge(case_event_list[i], case_event_list[i+1])
 
-
+#Display The Plot
 d.view()
